@@ -1,15 +1,16 @@
 name: Code Quality Check
-
 on:
   pull_request:
     branches:
-      - nextjs
-      - nextjs-prod
-      - release/*
+      - "!release/*"
+      - "nextjs"
+      - "nextjs-prod"
+      - "release/*"
 
 jobs:
   prettier:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.head.ref != 'release/*'
 
     defaults:
       run:
@@ -54,15 +55,15 @@ jobs:
         node-version: [16.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install Dependencies
-        run: yarn install
+      - name: Install deps
+        run: |
+          yarn install
       - name: Run eslint
         run: yarn lint
         env:
           CI: true
-        if: github.event.pull_request.base.ref != 'release/*'
