@@ -33,24 +33,24 @@ const useStyles = makeStyles(() => {
 });
 
 const WistiaPlayerEmbed: FC<WistiaPlayerEmbedProps> = (props) => {
-  const { productId, selectedVideoId = null } = props;
+    const { productId, selectedVideoId = null } = props;
 
-  const { selectedWistiaVideoId } = useContext(ProductContext);
+    const { selectedWistiaVideoId } = useContext(ProductContext);
 
-  const classes = useStyles();
-  const wistiaVideoIds: string[] = useSelector(
-    (state) => getProductWistiaVideoIds(productId, state) || [],
-  );
+    const classes = useStyles();
+    const wistiaVideoIds: string[] = useSelector(
+      (state) => getProductWistiaVideoIds(productId, state) || [],
+    );
 
-  // use the provided selectedId or the one from context
-  const selectedId = selectedVideoId || selectedWistiaVideoId;
+    // use the provided selectedId or the one from context
+    const selectedId = selectedVideoId || selectedWistiaVideoId;
 
-  useEffect(() => {
-    // need to load E-v1.js & embed videos
-    const eV1Script = document.createElement('script');
+    useEffect(() => {
+      // need to load E-v1.js & embed videos
+      const eV1Script = document.createElement('script');
 
-    eV1Script.src = 'https://fast.wistia.com/assets/external/E-v1.js';
-    eV1Script.async = true;
+      eV1Script.src = 'https://fast.wistia.com/assets/external/E-v1.js';
+      eV1Script.async = true;
 
     document.body.appendChild(eV1Script);
 
