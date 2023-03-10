@@ -1,4 +1,3 @@
-
 declare global {
   // Globals from Webpack
   const IN_DEVELOPMENT: boolean;
@@ -20,5 +19,4 @@ declare global {
     start: () => void;
     init: () => void;
   }
-
 }
