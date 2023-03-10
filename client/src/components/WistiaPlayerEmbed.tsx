@@ -33,14 +33,14 @@ const useStyles = makeStyles(() => {
 });
 
 const WistiaPlayerEmbed: FC<WistiaPlayerEmbedProps> = (props) => {
-  const { productId, selectedVideoId = null } = props;
+          const { productId, selectedVideoId = null } = props;
 
-  const { selectedWistiaVideoId } = useContext(ProductContext);
+          const { selectedWistiaVideoId } = useContext(ProductContext);
 
-  const classes = useStyles();
-  const wistiaVideoIds: string[] = useSelector(
-    (state) => getProductWistiaVideoIds(productId, state) || [],
-  );
+          const classes = useStyles();
+          const wistiaVideoIds: string[] = useSelector(
+            (state) => getProductWistiaVideoIds(productId, state) || [],
+          );
 
   // use the provided selectedId or the one from context
   const selectedId = selectedVideoId || selectedWistiaVideoId;
