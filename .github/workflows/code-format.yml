@@ -36,23 +36,22 @@ jobs:
       - name: Check Prettier Formatting
         id: prettier-check
         run: |
-          npx prettier --check "{src,project_utils,puppeteer,tests}/**/*.{js,ts,json}" "*.{js,ts,json}" "../.github/**/*.yml" --ignore-path="{../yarn.lock,../package.json}"
+          npx prettier --check "{src,project_utils,puppeteer,tests}/**/*.{js,ts,tsx,json}" "*.{js,ts,json}" "../.github/**/*.yml" --ignore-path="{../yarn.lock,../package.json}"
         continue-on-error: true
       - name: Auto-format Code and Commit Prettier Changes
         if: steps.prettier-check.outcome == 'failure'
         run: |
           git fetch --unshallow
           git checkout ${{ env.BRANCH_NAME }}
-          npx prettier --write "{src,project_utils,puppeteer,tests}/**/*.{js,ts,json}" "*.{js,ts,json}" "../.github/**/*.yml" --ignore-path="{../yarn.lock,../package.json}"
+          npx prettier --write "{src,project_utils,puppeteer,tests}/**/*.{js,ts,tsx,json}" "*.{js,ts,json}" "../.github/**/*.yml" --ignore-path="{../yarn.lock,../package.json}"
           git config --global user.email "commit-bot@example.com"
           git config --global user.name "Commit Bot"
           git add -A
           git commit -m "chore: Auto-run Prettier on files in PR" --no-verify
           git push origin ${{ env.BRANCH_NAME }}
-
   eslint:
-    needs: prettier
     if: github.event.pull_request.head.ref == 'nextjs' || github.event.pull_request.head.ref == 'nextjs-prod'
+    needs: prettier
     runs-on: ubuntu-latest
 
     defaults:
