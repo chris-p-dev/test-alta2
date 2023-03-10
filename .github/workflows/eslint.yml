@@ -9,7 +9,6 @@ on:
 
 jobs:
   eslint:
-    needs: run_prettier
     runs-on: ubuntu-latest
 
     defaults:
