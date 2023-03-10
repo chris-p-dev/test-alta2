@@ -36,14 +36,14 @@ jobs:
       - name: Check Prettier Formatting
         id: prettier-check
         run: |
-          npx prettier --check "{src,project_utils,puppeteer,tests}/**/*.{js,ts,json}" "*.{js,ts,json}" "../.github/**/*.yml" --ignore-path="{../yarn.lock,../package.json}"
+          npx prettier --check "{src,project_utils,puppeteer,tests}/**/*.{js,ts,tsx,json}" "*.{js,ts,json}" "../.github/**/*.yml" --ignore-path="{../yarn.lock,../package.json}"
         continue-on-error: true
       - name: Auto-format Code and Commit Prettier Changes
         if: steps.prettier-check.outcome == 'failure'
         run: |
           git fetch --unshallow
           git checkout ${{ env.BRANCH_NAME }}
-          npx prettier --write "{src,project_utils,puppeteer,tests}/**/*.{js,ts,json}" "*.{js,ts,json}" "../.github/**/*.yml" --ignore-path="{../yarn.lock,../package.json}"
+          npx prettier --write "{src,project_utils,puppeteer,tests}/**/*.{js,ts,tsx,json}" "*.{js,ts,json}" "../.github/**/*.yml" --ignore-path="{../yarn.lock,../package.json}"
           git config --global user.email "commit-bot@example.com"
           git config --global user.name "Commit Bot"
           git add -A
