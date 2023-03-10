@@ -1,1 +1,42 @@
-{"kiosk":{"open-mobile-menu":"Open mobile menu","account":"Account","cart-qty":"Cart({{cartQty}})"},"logo":{"to-home-page":"To home page"},"mobile":{"all-name":"All {{name}}","name-page":"{{name}} Page","to-name-menu":"To {{name}} menu","hello-user":"Hello, {{firstname}}!","create-an-account-or-login":"Create an Account or Login","account-stroke-login":"Account / Login","close-mobile-menu":"Close mobile menu"},"our-store":"Our Store","main-menu":"Main Menu","mobile-menu":{"open-menu":"Open Menu"},"search":{"label":"Search","placeholder":"What can we help you find?","submit-button-aria":"Submit search","clode-button-aria":"Close search"},"nav":{"account":{"logged_in":"Hello","logged_out":"Account","create_account/login":"Create Account/Login"},"list":"List","compare":"Compare","cart":"Cart","phone":"Call Us","contact":"Contact Us","favorites":"Favorites","call_us_at":"Call us at {{phone}}","location_store_info":"Location & Store Info","location_store_info_plural":"Locations & Store Info"}}
+{
+  "kiosk": {
+    "open-mobile-menu": "Open mobile menu",
+    "account": "Account",
+    "cart-qty": "Cart({{cartQty}})"
+  },
+  "logo": { "to-home-page": "To home page" },
+  "mobile": {
+    "all-name": "All {{name}}",
+    "name-page": "{{name}} Page",
+    "to-name-menu": "To {{name}} menu",
+    "hello-user": "Hello, {{firstname}}!",
+    "create-an-account-or-login": "Create an Account or Login",
+    "account-stroke-login": "Account / Login",
+    "close-mobile-menu": "Close mobile menu"
+  },
+  "our-store": "Our Store",
+  "main-menu": "Main Menu",
+  "mobile-menu": { "open-menu": "Open Menu" },
+  "search": {
+    "label": "Search",
+    "placeholder": "What can we help you find?",
+    "submit-button-aria": "Submit search",
+    "clode-button-aria": "Close search"
+  },
+  "nav": {
+    "account": {
+      "logged_in": "Hello",
+      "logged_out": "Account",
+      "create_account/login": "Create Account/Login"
+    },
+    "list": "List",
+    "compare": "Compare",
+    "cart": "Cart",
+    "phone": "Call Us",
+    "contact": "Contact Us",
+    "favorites": "Favorites",
+    "call_us_at": "Call us at {{phone}}",
+    "location_store_info": "Location & Store Info",
+    "location_store_info_plural": "Locations & Store Info"
+  }
+}

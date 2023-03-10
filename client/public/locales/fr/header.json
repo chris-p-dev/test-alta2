@@ -1,1 +1,42 @@
-{"kiosk":{"open-mobile-menu":"Ouvrir le menu mobile","account":"Compte","cart-qty":"Panier({{cartQty}})"},"logo":{"to-home-page":"Vers la page d'accueil"},"mobile":{"all-name":"Tout {{name}}","name-page":"Page {{name}}","to-name-menu":"Vers le menu {{name}}","hello-user":"Bonjour, {{firstname}}!","create-an-account-or-login":"Créez un compte ou connectez-vous","account-stroke-login":"Compte / Ouvrir une session","close-mobile-menu":"Fermer le menu mobile"},"our-store":"Notre magasin","main-menu":"Menu principal","mobile-menu":{"open-menu":"Ouvrir le menu"},"search":{"label":"Chercher","placeholder":"Que pouvons-nous vous aider à trouver?","submit-button-aria":"Soumettre la recherche","clode-button-aria":"Fermer la recherche"},"nav":{"account":{"logged_in":"Bonjour","logged_out":"Compte","create_account/login":"Créer un compte/Se connecter"},"list":"Liste","compare":"Comparer","cart":"Panier","phone":"Appelez-nous","contact":"Contactez-nous","favorites":"Favoris","call_us_at":"Appelez-nous au {{phone}}","location_store_info":" Informations sur l'emplacement et le magasin","location_store_info_plural":"Informations sur les emplacements et les magasins"}}
+{
+  "kiosk": {
+    "open-mobile-menu": "Ouvrir le menu mobile",
+    "account": "Compte",
+    "cart-qty": "Panier({{cartQty}})"
+  },
+  "logo": { "to-home-page": "Vers la page d'accueil" },
+  "mobile": {
+    "all-name": "Tout {{name}}",
+    "name-page": "Page {{name}}",
+    "to-name-menu": "Vers le menu {{name}}",
+    "hello-user": "Bonjour, {{firstname}}!",
+    "create-an-account-or-login": "Créez un compte ou connectez-vous",
+    "account-stroke-login": "Compte / Ouvrir une session",
+    "close-mobile-menu": "Fermer le menu mobile"
+  },
+  "our-store": "Notre magasin",
+  "main-menu": "Menu principal",
+  "mobile-menu": { "open-menu": "Ouvrir le menu" },
+  "search": {
+    "label": "Chercher",
+    "placeholder": "Que pouvons-nous vous aider à trouver?",
+    "submit-button-aria": "Soumettre la recherche",
+    "clode-button-aria": "Fermer la recherche"
+  },
+  "nav": {
+    "account": {
+      "logged_in": "Bonjour",
+      "logged_out": "Compte",
+      "create_account/login": "Créer un compte/Se connecter"
+    },
+    "list": "Liste",
+    "compare": "Comparer",
+    "cart": "Panier",
+    "phone": "Appelez-nous",
+    "contact": "Contactez-nous",
+    "favorites": "Favoris",
+    "call_us_at": "Appelez-nous au {{phone}}",
+    "location_store_info": " Informations sur l'emplacement et le magasin",
+    "location_store_info_plural": "Informations sur les emplacements et les magasins"
+  }
+}

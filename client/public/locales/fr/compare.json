@@ -1,1 +1,10 @@
-{"added-to-compare":"<1>{{product}}</1> ajouté à la comparaison","go-to-compare":"Voir la page de comparaison","max-limit-compare":"Pas plus de quatre éléments peuvent être comparés à la fois.","compare":"Comparer","head":{"description":"Comparer les produits"},"no-items":"Aucun élément dans votre liste","compare-products":"Comparer les produits","specifications":"$t(product:product-shop.specifications)"}
+{
+  "added-to-compare": "<1>{{product}}</1> ajouté à la comparaison",
+  "go-to-compare": "Voir la page de comparaison",
+  "max-limit-compare": "Pas plus de quatre éléments peuvent être comparés à la fois.",
+  "compare": "Comparer",
+  "head": { "description": "Comparer les produits" },
+  "no-items": "Aucun élément dans votre liste",
+  "compare-products": "Comparer les produits",
+  "specifications": "$t(product:product-shop.specifications)"
+}

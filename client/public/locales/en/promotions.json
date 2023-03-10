@@ -1,1 +1,18 @@
-{"return-to-results":"Return to results","filter":{"category":"Categories","manufacturer":"Brands","tags":"Promotions"},"filters-applied":"{{number}} applied","clear-all-filters":"Clear all applied filters in {{displayName}}","apply-selected-filters":"Apply the selected filters in {{displayName}}","page":{"start-date":"Start Date","end-date":"End Date","promotions-and-rebates":"Promotions and Rebates","no-current-promotions":"There are no promotions currently taking place."},"show-filter-options":"Show filter options"}
+{
+  "return-to-results": "Return to results",
+  "filter": {
+    "category": "Categories",
+    "manufacturer": "Brands",
+    "tags": "Promotions"
+  },
+  "filters-applied": "{{number}} applied",
+  "clear-all-filters": "Clear all applied filters in {{displayName}}",
+  "apply-selected-filters": "Apply the selected filters in {{displayName}}",
+  "page": {
+    "start-date": "Start Date",
+    "end-date": "End Date",
+    "promotions-and-rebates": "Promotions and Rebates",
+    "no-current-promotions": "There are no promotions currently taking place."
+  },
+  "show-filter-options": "Show filter options"
+}

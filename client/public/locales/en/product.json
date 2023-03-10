@@ -1,1 +1,89 @@
-{"bundled-products":"This package includes these products","model-number":"$t(translation:model-number) {{modelNumber}}","head":{"product-details-for":"Product details for {{name}}"},"product-shop":{"misc-specs":"Misc. Specs","related-items":"Related items:","people-also-viewed":{"1":"People","2":"also viewed:"},"at-a-glance":"At a Glance","get-to-know-this-product":{"1":"Get to know","2":"this product."},"useful-documents":"Useful Documents","specifications":"Specifications","download-rebate-form":"Download Rebate Form","you-might-also-need-addons":"You Might Also Need","qualifies-for":"Qualifies for","details":"details"},"shipping":{"view-delivery-pikcup-options":"View Delivery & Pickup Options","add-zip-code":"Add Zip Code","deliver-pickup-options":"Deliver/Pickup Options","options-chosen-at-checkout":"Options will be chosen at checkout"},"tabs":{"more-from-the-manufacturer":"More From the Manufacturer","product-overview":"Product Overview","rebates":"Rebates"},"surfaces":{"out-of-stock":"Out of Stock","limited-availability":"Limited Availability","in-stock":"In Stock","disclosure":{"stock":"Items in-stock are available for scheduled delivery or scheduled pick-up at certain locations. Please contact locations prior to traveling to a location for pick-up.","no-stock":"For items that are out of stock please contact our store for more details and availability timelines."},"out-of-stock-at":"Out of Stock at","limited-availability-at":"Limited availability at","in-stock-at":"In stock at","qty":"qty","check-other-stores":"Check other stores","select-location":"Select Location"},"availability":{"check-other-stores":"Check Other Store Locations","add-zip":"Add zip code to view locations nearest to you","qty-availably":"{{qty}} Available","distance":"{{distance}} Miles","get-directions":"Get Directions","additional-store-info":"Additional Store Info","see-other-store-locations":"See Other Store Locations","in-stock-for-home-delivery":"For home delivery or scheduled pickup","out-of-stock-for-home-delivery":"For home delivery or scheduled pickup","limited-stock-for-home-delivery":"For home delivery or scheduled pickup","nearest-store":"Nearest Store"},"see-price-in-cart":"See Price in Cart","reviews":{"read-count-reviews":"Read {{formattedCount}} review","read-count-reviews_plural":"Read {{formattedCount}} reviews","read-reviews":"Read reviews","recommended":"Recommended","not-recommended":"Not Recommended","verified-reviewer":"Verified Reviewer","verified-purchase":"Verified Purchase","reviewed-at":"Reviewed At"},"quick-specs":"Quick Specs","regular-price":"Regular Price","our-price":"Our Price","mail-in-rebate":"Mail-in Rebate","details":"Details","price-after-rebate":"Price After Rebate","price-after-rebate_plural":"Price After Rebates","you-save":"You Save","save-amount":"Save {{discountAmountFormatted}}","at-a-glance":"At a Glance","add-set-to-cart":"Add Set to Cart","package-total":"Package Total:","ashley-pdp":{"add-to-cart":"Add to Cart","details-and-overview":"Details and Overview","dimensions-and-specifications":"Dimensions and Specifications","item":"Item","product-documents":"Product Documents","product-details-and-overview":"Product Details and Overview","select-color":"Select Color"}}
+{
+  "bundled-products": "This package includes these products",
+  "model-number": "$t(translation:model-number) {{modelNumber}}",
+  "head": { "product-details-for": "Product details for {{name}}" },
+  "product-shop": {
+    "misc-specs": "Misc. Specs",
+    "related-items": "Related items:",
+    "people-also-viewed": { "1": "People", "2": "also viewed:" },
+    "at-a-glance": "At a Glance",
+    "get-to-know-this-product": { "1": "Get to know", "2": "this product." },
+    "useful-documents": "Useful Documents",
+    "specifications": "Specifications",
+    "download-rebate-form": "Download Rebate Form",
+    "you-might-also-need-addons": "You Might Also Need",
+    "qualifies-for": "Qualifies for",
+    "details": "details"
+  },
+  "shipping": {
+    "view-delivery-pikcup-options": "View Delivery & Pickup Options",
+    "add-zip-code": "Add Zip Code",
+    "deliver-pickup-options": "Deliver/Pickup Options",
+    "options-chosen-at-checkout": "Options will be chosen at checkout"
+  },
+  "tabs": {
+    "more-from-the-manufacturer": "More From the Manufacturer",
+    "product-overview": "Product Overview",
+    "rebates": "Rebates"
+  },
+  "surfaces": {
+    "out-of-stock": "Out of Stock",
+    "limited-availability": "Limited Availability",
+    "in-stock": "In Stock",
+    "disclosure": {
+      "stock": "Items in-stock are available for scheduled delivery or scheduled pick-up at certain locations. Please contact locations prior to traveling to a location for pick-up.",
+      "no-stock": "For items that are out of stock please contact our store for more details and availability timelines."
+    },
+    "out-of-stock-at": "Out of Stock at",
+    "limited-availability-at": "Limited availability at",
+    "in-stock-at": "In stock at",
+    "qty": "qty",
+    "check-other-stores": "Check other stores",
+    "select-location": "Select Location"
+  },
+  "availability": {
+    "check-other-stores": "Check Other Store Locations",
+    "add-zip": "Add zip code to view locations nearest to you",
+    "qty-availably": "{{qty}} Available",
+    "distance": "{{distance}} Miles",
+    "get-directions": "Get Directions",
+    "additional-store-info": "Additional Store Info",
+    "see-other-store-locations": "See Other Store Locations",
+    "in-stock-for-home-delivery": "For home delivery or scheduled pickup",
+    "out-of-stock-for-home-delivery": "For home delivery or scheduled pickup",
+    "limited-stock-for-home-delivery": "For home delivery or scheduled pickup",
+    "nearest-store": "Nearest Store"
+  },
+  "see-price-in-cart": "See Price in Cart",
+  "reviews": {
+    "read-count-reviews": "Read {{formattedCount}} review",
+    "read-count-reviews_plural": "Read {{formattedCount}} reviews",
+    "read-reviews": "Read reviews",
+    "recommended": "Recommended",
+    "not-recommended": "Not Recommended",
+    "verified-reviewer": "Verified Reviewer",
+    "verified-purchase": "Verified Purchase",
+    "reviewed-at": "Reviewed At"
+  },
+  "quick-specs": "Quick Specs",
+  "regular-price": "Regular Price",
+  "our-price": "Our Price",
+  "mail-in-rebate": "Mail-in Rebate",
+  "details": "Details",
+  "price-after-rebate": "Price After Rebate",
+  "price-after-rebate_plural": "Price After Rebates",
+  "you-save": "You Save",
+  "save-amount": "Save {{discountAmountFormatted}}",
+  "at-a-glance": "At a Glance",
+  "add-set-to-cart": "Add Set to Cart",
+  "package-total": "Package Total:",
+  "ashley-pdp": {
+    "add-to-cart": "Add to Cart",
+    "details-and-overview": "Details and Overview",
+    "dimensions-and-specifications": "Dimensions and Specifications",
+    "item": "Item",
+    "product-documents": "Product Documents",
+    "product-details-and-overview": "Product Details and Overview",
+    "select-color": "Select Color"
+  }
+}

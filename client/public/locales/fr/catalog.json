@@ -1,1 +1,66 @@
-{"breadcrumb":{"search":"Résultats: {{searchTerm}} ({{searchResultsCount}})"},"pagination":{"first":"Premier","last":"Dernier"},"sort":{"most-popular":"Le plus populaire","name-a-to-z":"Nom: A to Z","name-z-to-a":"Nom: Z to A","price":{"low-to-high":"Prix: de bas en haut","high-to-low":"Prix: de haut en bas"},"average-customer-rating":"Évaluation moyenne des clients"},"showing-len-of-count":"Affichage de {{productLength}} sur {{catalogProductCount}} produits","view-more-products":"Voir plus de produits","filters":{"five-plus-stars":"{{value}}+ étoiles","five-or-less-stars":"{{count}} étoile","five-or-less-stars_plural":"{{count}} étoiles","mobile-filters-toggle":"Basculer les filtres mobiles","filter-and-sort":"Filtrer et trier","view-filtered-catalog":"Voir le catalogue filtré","view-catalog":"Voir le catalogue","and-up":"et plus","color-and-finish":"Couleur et finition","model":"Modèle","your-price":"Prix"},"view-less":"Voir moins","view-all":"Voir tout","shop":"Magasinez {{name}}","shop-by":"Magasiner Par {{title}}","shop-all":"Magasinez tous les {{name}}","reviews":{"no-star-reviews":"Aucun avis de {{stringVal}} étoiles à filtrer","back-to-product":"Retour au produit","three-out-or-four-dentists":"Recommandé par {{recommended}} sur {{totalReccCount}} ({{percentRecommended}}% des évaluateurs)","top-positive-review":"Critique positive principale","top-critical-review":"Critique négative principale","rating-breakdown":"Répartition des notes","filter-reviews":"Cliquez ci-dessous pour filtrer les critiques","newest-first":"Le plus récent d'abord","oldest-first":"Le plus ancien en premier","most-helpful":"Le plus utile","rating-high-to-low":"Note: de haut en bas","rating-low-to-high":"Note: de bas en haut","no-matching-filter":"Aucun commentaire correspondant au filtre","no-reviews-yet":"Pas encore de commentaire","showing-count-reviews":"Affichage de {{count}} commentaire","showing-count-reviews_plural":"Affichage de {{count}} commentaires"},"review":{"field":"Évaluez votre produit"},"search":{"no-results-for":"Désolé, nous n'avons pas trouvé de résultats pour '{{searchString}}'","can-we-help":"Pouvons-nous vous aider à trouver ce que vous cherchez ?","check-spelling-or":"Vérifiez l'orthographe ou essayez un terme plus général.","need-help":"Besoin d'aide?","call":"Appeler","or":"ou","email":"envoyez un courriel","one-of-our-experts":"l'un de nos experts","contact":"Contact"}}
+{
+  "breadcrumb": {
+    "search": "Résultats: {{searchTerm}} ({{searchResultsCount}})"
+  },
+  "pagination": { "first": "Premier", "last": "Dernier" },
+  "sort": {
+    "most-popular": "Le plus populaire",
+    "name-a-to-z": "Nom: A to Z",
+    "name-z-to-a": "Nom: Z to A",
+    "price": {
+      "low-to-high": "Prix: de bas en haut",
+      "high-to-low": "Prix: de haut en bas"
+    },
+    "average-customer-rating": "Évaluation moyenne des clients"
+  },
+  "showing-len-of-count": "Affichage de {{productLength}} sur {{catalogProductCount}} produits",
+  "view-more-products": "Voir plus de produits",
+  "filters": {
+    "five-plus-stars": "{{value}}+ étoiles",
+    "five-or-less-stars": "{{count}} étoile",
+    "five-or-less-stars_plural": "{{count}} étoiles",
+    "mobile-filters-toggle": "Basculer les filtres mobiles",
+    "filter-and-sort": "Filtrer et trier",
+    "view-filtered-catalog": "Voir le catalogue filtré",
+    "view-catalog": "Voir le catalogue",
+    "and-up": "et plus",
+    "color-and-finish": "Couleur et finition",
+    "model": "Modèle",
+    "your-price": "Prix"
+  },
+  "view-less": "Voir moins",
+  "view-all": "Voir tout",
+  "shop": "Magasinez {{name}}",
+  "shop-by": "Magasiner Par {{title}}",
+  "shop-all": "Magasinez tous les {{name}}",
+  "reviews": {
+    "no-star-reviews": "Aucun avis de {{stringVal}} étoiles à filtrer",
+    "back-to-product": "Retour au produit",
+    "three-out-or-four-dentists": "Recommandé par {{recommended}} sur {{totalReccCount}} ({{percentRecommended}}% des évaluateurs)",
+    "top-positive-review": "Critique positive principale",
+    "top-critical-review": "Critique négative principale",
+    "rating-breakdown": "Répartition des notes",
+    "filter-reviews": "Cliquez ci-dessous pour filtrer les critiques",
+    "newest-first": "Le plus récent d'abord",
+    "oldest-first": "Le plus ancien en premier",
+    "most-helpful": "Le plus utile",
+    "rating-high-to-low": "Note: de haut en bas",
+    "rating-low-to-high": "Note: de bas en haut",
+    "no-matching-filter": "Aucun commentaire correspondant au filtre",
+    "no-reviews-yet": "Pas encore de commentaire",
+    "showing-count-reviews": "Affichage de {{count}} commentaire",
+    "showing-count-reviews_plural": "Affichage de {{count}} commentaires"
+  },
+  "review": { "field": "Évaluez votre produit" },
+  "search": {
+    "no-results-for": "Désolé, nous n'avons pas trouvé de résultats pour '{{searchString}}'",
+    "can-we-help": "Pouvons-nous vous aider à trouver ce que vous cherchez ?",
+    "check-spelling-or": "Vérifiez l'orthographe ou essayez un terme plus général.",
+    "need-help": "Besoin d'aide?",
+    "call": "Appeler",
+    "or": "ou",
+    "email": "envoyez un courriel",
+    "one-of-our-experts": "l'un de nos experts",
+    "contact": "Contact"
+  }
+}

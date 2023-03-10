@@ -1,1 +1,37 @@
-{"aside":{"no-posts-found":"Aucun article trouvé."},"read-more":"Lire la suite","post":{"by":"par {{author}}","post-a-comment":"Poster un commentaire","comment":"Commentaire","post-comment":"Poster un commentaire"},"tags":{"no-popular":"Aucun {{type}} populaire actuellement.","less":"Moins","more":"Plus"},"votes":{"log-in":"Veuillez vous connecter à votre compte pour voter."},"comments":{"log-in":"Veuillez vous connecter à votre compte pour commenter.","count":"{{count}} Commentaire","count_plural":"{{count}} Commentaires","disabled":"Les autres commentaires sont désactivés pour ce message.","wait":"Veuillez patienter","load-mode":"Charger plus"},"page":{"relates-posts":"Articles Similaires","blog":"Blogue","open-filters-box":"Ouvrir la boîte de filtres","categories":"Catégories les plus populaires","topics":"Sujets","brands":"Marques les plus populaires","most-popular-posts":"Articles les plus populaires","most-popular-categories":"Catégories les plus populaires","most-popular-topics":"Sujets les plus populaires","most-popular-brands":"Marques les plus populaires","archive":"Archiver"}}
+{
+  "aside": { "no-posts-found": "Aucun article trouvé." },
+  "read-more": "Lire la suite",
+  "post": {
+    "by": "par {{author}}",
+    "post-a-comment": "Poster un commentaire",
+    "comment": "Commentaire",
+    "post-comment": "Poster un commentaire"
+  },
+  "tags": {
+    "no-popular": "Aucun {{type}} populaire actuellement.",
+    "less": "Moins",
+    "more": "Plus"
+  },
+  "votes": { "log-in": "Veuillez vous connecter à votre compte pour voter." },
+  "comments": {
+    "log-in": "Veuillez vous connecter à votre compte pour commenter.",
+    "count": "{{count}} Commentaire",
+    "count_plural": "{{count}} Commentaires",
+    "disabled": "Les autres commentaires sont désactivés pour ce message.",
+    "wait": "Veuillez patienter",
+    "load-mode": "Charger plus"
+  },
+  "page": {
+    "relates-posts": "Articles Similaires",
+    "blog": "Blogue",
+    "open-filters-box": "Ouvrir la boîte de filtres",
+    "categories": "Catégories les plus populaires",
+    "topics": "Sujets",
+    "brands": "Marques les plus populaires",
+    "most-popular-posts": "Articles les plus populaires",
+    "most-popular-categories": "Catégories les plus populaires",
+    "most-popular-topics": "Sujets les plus populaires",
+    "most-popular-brands": "Marques les plus populaires",
+    "archive": "Archiver"
+  }
+}

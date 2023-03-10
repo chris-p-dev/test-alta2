@@ -1,1 +1,6 @@
-{"verify-account":"Vérifiez votre compte","email-error":"Ce courriel est actuellement associée à un compte client existant. Veuillez vous connecter pour associer votre compte Amazon à ce client.","connect-accounts":"Connecter les comptes","failed":"L'association du compte a échoué, vérifiez votre mot de passe et réessayez ou contactez-nous pour obtenir de l'aide."}
+{
+  "verify-account": "Vérifiez votre compte",
+  "email-error": "Ce courriel est actuellement associée à un compte client existant. Veuillez vous connecter pour associer votre compte Amazon à ce client.",
+  "connect-accounts": "Connecter les comptes",
+  "failed": "L'association du compte a échoué, vérifiez votre mot de passe et réessayez ou contactez-nous pour obtenir de l'aide."
+}
