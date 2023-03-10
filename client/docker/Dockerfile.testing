@@ -1,0 +1,9 @@
+# Base on offical Node.js Alpine image
+FROM node:lts-alpine3.14
+
+# Set working directory
+WORKDIR /usr/app
+
+# Install PM2 globally
+RUN npm install --global pm2
+

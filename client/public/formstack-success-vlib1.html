@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formstack Success</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #EEE;
+      }
+
+      body {
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .success {
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .success__headline {
+        font-size: 3rem;
+      }
+
+      .success__paragraph {
+        font-size: 1.25rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="success">
+      <h1 class="success__headline">Thank You!</h1>
+      <p class="success__paragraph">Thank you for your submission, a representative with Liberty Bell Smart Home will be in touch with you shortly.</p>
+    </section>
+
+    <script>
+      if (window.top.avbData) {
+        var title = window.frameElement ? window.frameElement.title : null;
+
+        window.top.avbData.push({
+          event: "send_event",
+          cat: "Form",
+          act: title + " Success",
+          lab: "Formstack Form"
+        });
+      }
+    </script>
+  </body>
+</html>

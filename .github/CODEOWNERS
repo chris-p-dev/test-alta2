@@ -1,0 +1,30 @@
+# GitHub will automatically request reviews from any code owners configured here.
+#
+# https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners#codeowners-syntax
+
+# This is a comment.
+# Each line is a file pattern followed by one or more owners. Just like a hosts file.
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @global-owner1 and @global-owner2 will be requested for
+# review when someone opens a pull request.
+
+# The dev branch is protected with needing 2 approvals
+# also include QA's so they can be aware of movement
+
+*         @BrandSourceDigital/alta @BrandSourceDigital/alta-qa @TimeDropsSB
+
+# Order is important; the last matching pattern takes the most
+# precedence. When someone opens a pull request that only
+# modifies JS files, only @js-owner and not the global
+# owner(s) will be requested for a review.
+# *.js    @js-owner
+
+# Teams can be specified as code owners as well. Teams should
+# be identified in the format @org/team-name. Teams must have
+# explicit write access to the repository. In this example,
+# the octocats team in the octo-org organization owns all .txt files.
+# *.txt @octo-org/octocats
+
+
