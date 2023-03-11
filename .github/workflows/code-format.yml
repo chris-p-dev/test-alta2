@@ -9,8 +9,8 @@ on:
 
 jobs:
   prettier:
+    if: github.base_ref != 'release/*'
     runs-on: ubuntu-latest
-    if: github.base_ref != 'refs/heads/release/*'
 
     defaults:
       run:
