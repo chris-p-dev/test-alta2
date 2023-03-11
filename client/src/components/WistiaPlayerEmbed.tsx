@@ -66,41 +66,41 @@ const WistiaPlayerEmbed: FC<WistiaPlayerEmbedProps> = (props) => {
 
   useEffect(() => {
     // need to load E-v1.js & embed videos
-    const eV1Script = document.createElement('script');
+                  const eV1Script = document.createElement('script');
 
-    eV1Script.src = 'https://fast.wistia.com/assets/external/E-v1.js';
-    eV1Script.async = true;
+                  eV1Script.src = 'https://fast.wistia.com/assets/external/E-v1.js';
+                  eV1Script.async = true;
 
-    document.body.appendChild(eV1Script);
+                  document.body.appendChild(eV1Script);
 
-    wistiaVideoIds.forEach((videoId) => {
-      const embedVideoScript = document.createElement('script');
+                  wistiaVideoIds.forEach((videoId) => {
+                    const embedVideoScript = document.createElement('script');
 
-      embedVideoScript.src = `https://fast.wistia.com/embed/medias/${videoId}.jsonp`;
-      embedVideoScript.async = true;
+                    embedVideoScript.src = `https://fast.wistia.com/embed/medias/${videoId}.jsonp`;
+                    embedVideoScript.async = true;
 
-      document.body.appendChild(embedVideoScript);
-    });
-  }, []);
+                    document.body.appendChild(embedVideoScript);
+                  });
+                }, []);
 
-  return (
-    <>
-      {wistiaVideoIds.map((videoId) => {
-        return (
-          <div
-            key={videoId}
-            className={classnames(classes.videoContainer, {
-              [classes.videoShow]: selectedId === videoId,
-            })}
-          >
-            <div
-              className={classnames(
-                `wistia_embed wistia_async_${videoId}`,
-                classes.video,
-              )}
-            ></div>
-          </div>
-        );
+                return (
+                  <>
+                    {wistiaVideoIds.map((videoId) => {
+                      return (
+                        <div
+                          key={videoId}
+                          className={classnames(classes.videoContainer, {
+                            [classes.videoShow]: selectedId === videoId,
+                          })}
+                        >
+                          <div
+                            className={classnames(
+                              `wistia_embed wistia_async_${videoId}`,
+                              classes.video,
+                            )}
+                          ></div>
+                        </div>
+                      );
       })}
     </>
   );
