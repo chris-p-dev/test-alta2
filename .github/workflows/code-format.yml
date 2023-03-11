@@ -10,7 +10,7 @@ on:
 jobs:
   prettier:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.head.ref != 'release/*'
+    if: ${{ github.event.pull_request.head.ref != 'release/*' }}
 
     defaults:
       run:
@@ -50,7 +50,7 @@ jobs:
           git commit -m "chore: Auto-run Prettier on files in PR" --no-verify
           git push origin ${{ env.BRANCH_NAME }}
   eslint:
-    if: github.event.pull_request.head.ref == 'nextjs' || github.event.pull_request.head.ref == 'nextjs-prod'
+    if: ${{ github.event.pull_request.head.ref == 'nextjs' || github.event.pull_request.head.ref == 'nextjs-prod' }}
     needs: prettier
     runs-on: ubuntu-latest
 
