@@ -14,96 +14,96 @@ export type WistiaThumbnail = {
 };
 
 const useStyles = makeStyles(() => {
-                        return {
-                          videoContainer: {
-                            height: '45%',
-                            display: 'none',
-                            '@supports (aspect-ratio: 16 / 9)': {
-                              height: 'auto',
-                              aspectRatio: '16 / 9',
-                            },
-                          },
-                          video: {
-                            height: '100%',
-                          },
-                          videoShow: {
-                            display: 'block',
-                          },
-                        };
-                      });
+  return {
+    videoContainer: {
+      height: '45%',
+      display: 'none',
+      '@supports (aspect-ratio: 16 / 9)': {
+        height: 'auto',
+        aspectRatio: '16 / 9',
+      },
+    },
+    video: {
+      height: '100%',
+    },
+    videoShow: {
+      display: 'block',
+    },
+  };
+});
 
-                      const WistiaPlayerEmbed: FC<WistiaPlayerEmbedProps> = (props) => {
-                        const { productId, selectedVideoId = null } = props;
+const WistiaPlayerEmbed: FC<WistiaPlayerEmbedProps> = (props) => {
+  const { productId, selectedVideoId = null } = props;
 
-                        const { selectedWistiaVideoId } = useContext(ProductContext);
+  const { selectedWistiaVideoId } = useContext(ProductContext);
 
-                        const classes = useStyles();
-                        const wistiaVideoIds: string[] = useSelector(
-                          (state) => getProductWistiaVideoIds(productId, state) || [],
-                        );
+  const classes = useStyles();
+  const wistiaVideoIds: string[] = useSelector(
+    (state) => getProductWistiaVideoIds(productId, state) || [],
+  );
 
-                        // use the provided selectedId or the one from context
-                        const selectedId = selectedVideoId || selectedWistiaVideoId;
+  // use the provided selectedId or the one from context
+  const selectedId = selectedVideoId || selectedWistiaVideoId;
 
-                        useEffect(() => {
-                          // need to load E-v1.js & embed videos
-                                                        const eV1Script = document.createElement('script');
+  useEffect(() => {
+    // need to load E-v1.js & embed videos
+    const eV1Script = document.createElement('script');
 
-                                                        eV1Script.src = 'https://fast.wistia.com/assets/external/E-v1.js';
-                                                        eV1Script.async = true;
+    eV1Script.src = 'https://fast.wistia.com/assets/external/E-v1.js';
+    eV1Script.async = true;
 
-                                                        document.body.appendChild(eV1Script);
+    document.body.appendChild(eV1Script);
 
-                                                        wistiaVideoIds.forEach((videoId) => {
-                                                          const embedVideoScript = document.createElement('script');
+    wistiaVideoIds.forEach((videoId) => {
+      const embedVideoScript = document.createElement('script');
 
-                                                          embedVideoScript.src = `https://fast.wistia.com/embed/medias/${videoId}.jsonp`;
-                                                          embedVideoScript.async = true;
+      embedVideoScript.src = `https://fast.wistia.com/embed/medias/${videoId}.jsonp`;
+      embedVideoScript.async = true;
 
-                                                          document.body.appendChild(embedVideoScript);
-                          });
-                        }, []);
+      document.body.appendChild(embedVideoScript);
+    });
+  }, []);
 
-                        useEffect(() => {
-                          // need to load E-v1.js & embed videos
-                          const eV1Script = document.createElement('script');
+  useEffect(() => {
+    // need to load E-v1.js & embed videos
+    const eV1Script = document.createElement('script');
 
-                          eV1Script.src = 'https://fast.wistia.com/assets/external/E-v1.js';
-                          eV1Script.async = true;
+    eV1Script.src = 'https://fast.wistia.com/assets/external/E-v1.js';
+    eV1Script.async = true;
 
-                          document.body.appendChild(eV1Script);
+    document.body.appendChild(eV1Script);
 
-                          wistiaVideoIds.forEach((videoId) => {
-                            const embedVideoScript = document.createElement('script');
+    wistiaVideoIds.forEach((videoId) => {
+      const embedVideoScript = document.createElement('script');
 
-                            embedVideoScript.src = `https://fast.wistia.com/embed/medias/${videoId}.jsonp`;
-                            embedVideoScript.async = true;
+      embedVideoScript.src = `https://fast.wistia.com/embed/medias/${videoId}.jsonp`;
+      embedVideoScript.async = true;
 
-                            document.body.appendChild(embedVideoScript);
-                          });
-                        }, []);
+      document.body.appendChild(embedVideoScript);
+    });
+  }, []);
 
-                        return (
-                          <>
-                            {wistiaVideoIds.map((videoId) => {
-                              return (
-                                <div
-                                  key={videoId}
-                                  className={classnames(classes.videoContainer, {
-                                    [classes.videoShow]: selectedId === videoId,
-                                  })}
-                                >
-                                                        <div
-                                                          className={classnames(
-                                                            `wistia_embed wistia_async_${videoId}`,
-                                                            classes.video,
-                                                          )}
-                                                        ></div>
-                                </div>
-                              );
-                            })}
-                          </>
-                        );
+  return (
+    <>
+      {wistiaVideoIds.map((videoId) => {
+        return (
+          <div
+            key={videoId}
+            className={classnames(classes.videoContainer, {
+              [classes.videoShow]: selectedId === videoId,
+            })}
+          >
+            <div
+              className={classnames(
+                `wistia_embed wistia_async_${videoId}`,
+                classes.video,
+              )}
+            ></div>
+          </div>
+        );
+      })}
+    </>
+  );
 };
 
 export default memo(WistiaPlayerEmbed);
