@@ -17,7 +17,7 @@ jobs:
          echo "github.base_ref: ${{  github.base_ref }}"
 
   eslint:
-    if: github.base_ref == 'nextjs' || github.base_ref == 'nextjs-prod' ||  github.base_ref == 'release/*'
+    if: github.base_ref == 'nextjs' || github.base_ref == 'nextjs-prod' ||  github.base_ref == 'release/*' || github.base_ref == 'ALTA-*'
     needs: prettier
     runs-on: ubuntu-latest
 
