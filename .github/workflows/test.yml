@@ -1,0 +1,20 @@
+name: My TEst
+
+on:
+  pull_request:
+    branches:
+      - "nextjs"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - name: "yes"
+        run: |
+          echo "yes"
+        env:
+          CI: true
