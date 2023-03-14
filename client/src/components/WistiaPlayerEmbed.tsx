@@ -87,19 +87,19 @@ const WistiaPlayerEmbed: FC<WistiaPlayerEmbedProps> = (props) => {
     <>
       {wistiaVideoIds.map((videoId) => {
         return (
-          <div
-            key={videoId}
-            className={classnames(classes.videoContainer, {
-              [classes.videoShow]: selectedId === videoId,
-            })}
-          >
-            <div
-              className={classnames(
-                `wistia_embed wistia_async_${videoId}`,
-                classes.video,
-              )}
-            ></div>
-          </div>
+                      <div
+                        key={videoId}
+                        className={classnames(classes.videoContainer, {
+                          [classes.videoShow]: selectedId === videoId,
+                        })}
+                      >
+                        <div
+                          className={classnames(
+                            `wistia_embed wistia_async_${videoId}`,
+                            classes.video,
+                          )}
+                        ></div>
+                      </div>
         );
       })}
     </>

@@ -9,24 +9,24 @@ const main = async () => {
   });
   const page = await browser.newPage();
 
-  await page.goto('http://localhost:3000/wishlist');
+              await page.goto('http://localhost:3000/wishlist');
 
-  await page.waitForTimeout(2000);
-  await page.$eval('nextjs-portal', (el) => el.remove());
+              await page.waitForTimeout(2000);
+              await page.$eval('nextjs-portal', (el) => el.remove());
 
-  page
-    .waitForSelector('[data-avb-product-add-to-cart-btn]')
-    .then(() => page.click('[data-avb-product-add-to-cart-btn]'));
-  await page.waitForTimeout(1000);
-  page
-    .waitForSelector('[data-avb-product-add-to-cart-modal-go-to-btn]')
-    .then(() => page.click('[data-avb-product-add-to-cart-modal-go-to-btn]'));
+              page
+                .waitForSelector('[data-avb-product-add-to-cart-btn]')
+                .then(() => page.click('[data-avb-product-add-to-cart-btn]'));
+              await page.waitForTimeout(1000);
+              page
+                .waitForSelector('[data-avb-product-add-to-cart-modal-go-to-btn]')
+                .then(() => page.click('[data-avb-product-add-to-cart-modal-go-to-btn]'));
 
-  await page.waitForTimeout(3000);
-  page
-    .waitForSelector('[data-avb-checkout-cart-proceed-btn]')
-    .then(() => page.click('[data-avb-checkout-cart-proceed-btn]'));
-  await page.waitForTimeout(6500);
+              await page.waitForTimeout(3000);
+              page
+                .waitForSelector('[data-avb-checkout-cart-proceed-btn]')
+                .then(() => page.click('[data-avb-checkout-cart-proceed-btn]'));
+              await page.waitForTimeout(6500);
   page
     .waitForSelector('input[name="telephone"]')
     .then(() =>
