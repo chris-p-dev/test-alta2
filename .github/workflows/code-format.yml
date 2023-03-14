@@ -6,7 +6,7 @@ on:
 jobs:
   prettier:
     runs-on: ubuntu-latest
-    if: github.base_ref != 'release/*'
+    if: github.event_name == 'pull_request' && !startsWith(github.base_ref, 'refs/heads/release/')
 
 
     steps:
