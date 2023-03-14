@@ -101,15 +101,15 @@ const main = async () => {
   await page.waitForTimeout(3000);
   await frame.type('#view-ssn', '255557991');
   await page.waitForTimeout(500);
-  await frame.type('#ssn-confirm', '255557991');
-  await page.waitForTimeout(500);
-  await frame.$eval('#drivers-license', (el) => (el.value = '12345678'));
-  await page.waitForTimeout(5000);
-  await frame.click('.mt-4');
-  await page.waitForTimeout(4000);
-  await frame.click('button[type="submit"]');
-  await page.waitForTimeout(6000);
-  await frame.click('.mt-4');
+      await frame.type('#ssn-confirm', '255557991');
+      await page.waitForTimeout(500);
+      await frame.$eval('#drivers-license', (el) => (el.value = '12345678'));
+      await page.waitForTimeout(5000);
+      await frame.click('.mt-4');
+      await page.waitForTimeout(4000);
+      await frame.click('button[type="submit"]');
+      await page.waitForTimeout(6000);
+      await frame.click('.mt-4');
 
   //signature page
   await page.waitForTimeout(6000);
