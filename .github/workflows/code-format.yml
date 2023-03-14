@@ -46,7 +46,7 @@ jobs:
           git commit -m "chore: Auto-run Prettier on files in PR" --no-verify
           git push origin ${{ env.BRANCH_NAME }}
   eslint:
-    if: ${{ always() }} && github.event_name == 'pull_request' && github.base_ref == 'nextjs' || github.base_ref == 'nextjs-prod' ||  startsWith(github.base_ref, 'release/')
+    if: always() && github.event_name == 'pull_request' && (github.base_ref == 'nextjs' || github.base_ref == 'nextjs-prod' ||  startsWith(github.base_ref, 'release/'))
     needs: prettier
     runs-on: ubuntu-latest
 
