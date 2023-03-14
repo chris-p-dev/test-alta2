@@ -6,7 +6,7 @@ on:
 jobs:
   prettier:
     runs-on: ubuntu-latest
-    if: github.base_ref != 'refs/heads/release/*'
+    if: github.base_ref != 'release/*'
 
 
     steps:
