@@ -1,14 +1,12 @@
 name: Code Quality Check
 on:
   pull_request:
-   types: [opened]
+   types: [opened, synchronize]
 
 jobs:
   prettier:
     runs-on: ubuntu-latest
-
-
-
+    if: github.event_name == 'pull_request' && !startsWith(github.base_ref, 'release/')
     steps:
       - name: Prettierfy and commit
         run: |
@@ -17,10 +15,10 @@ jobs:
          echo "github.base_ref: ${{  github.base_ref }}"
 
   eslint:
-    if: github.base_ref == 'nextjs' || github.base_ref == 'nextjs-prod' ||  github.base_ref == 'release/*'
+   
     needs: prettier
     runs-on: ubuntu-latest
-
+    if: ${{ always() }} && github.event_name == 'pull_request' && github.base_ref == 'nextjs' || github.base_ref == 'nextjs-prod' ||  startsWith(github.base_ref, 'release/')
     steps:
       - name: ESLINTING
         run: |
