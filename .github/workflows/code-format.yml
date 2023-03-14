@@ -12,13 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     if: github.base_ref != 'refs/heads/release/*'
 
-    defaults:
-      run:
-        working-directory: client
-
-    strategy:
-      matrix:
-        node-version: [16.x]
 
     steps:
       - name: Prettierfy and commit
@@ -31,14 +24,6 @@ jobs:
     if: github.base_ref == 'nextjs' || github.base_ref == 'nextjs-prod' ||  github.base_ref == 'release/*'
     needs: prettier
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: client
-
-    strategy:
-      matrix:
-        node-version: [16.x]
 
     steps:
       - name: ESLINTING
