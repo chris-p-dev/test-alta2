@@ -6,7 +6,7 @@ on:
 jobs:
   prettier:
     runs-on: ubuntu-latest
-
+    if: github.base_ref != 'refs/heads/release/*'
 
 
     steps:
@@ -20,7 +20,7 @@ jobs:
    
     needs: prettier
     runs-on: ubuntu-latest
-
+    if: github.base_ref == 'nextjs' || github.base_ref == 'nextjs-prod' ||  github.base_ref == 'release/*'
     steps:
       - name: ESLINTING
         run: |
