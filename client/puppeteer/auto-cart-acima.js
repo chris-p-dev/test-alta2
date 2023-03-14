@@ -137,14 +137,14 @@ const main = async () => {
   await frame.type('#credit_card_expMonth', '12');
   await page.waitForTimeout(300);
   await frame.type('#credit_card_expYear', '2025');
-  await page.waitForTimeout(300);
-  await frame.type('#credit_card_cvvInput', '554');
-  await page.waitForTimeout(300);
-  await frame.click('.btn-block[type="button"]:last-of-type');
-  await page.waitForTimeout(25000);
-  await frame.click('[type="button"]:last-of-type');
-  await page.waitForTimeout(50000);
-  await browser.close();
+            await page.waitForTimeout(300);
+            await frame.type('#credit_card_cvvInput', '554');
+            await page.waitForTimeout(300);
+            await frame.click('.btn-block[type="button"]:last-of-type');
+            await page.waitForTimeout(25000);
+            await frame.click('[type="button"]:last-of-type');
+            await page.waitForTimeout(50000);
+            await browser.close();
 };
 
 main();
