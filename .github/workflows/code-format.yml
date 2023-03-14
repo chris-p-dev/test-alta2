@@ -1,11 +1,7 @@
 name: Code Quality Check
 on:
   pull_request:
-    branches:
-      - "!release/*"
-      - "nextjs"
-      - "nextjs-prod"
-      - "release/*"
+    types: [opened]
 
 jobs:
   prettier:
