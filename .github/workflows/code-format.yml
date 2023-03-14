@@ -26,10 +26,6 @@ jobs:
     needs: prettier
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: client
-
     steps:
       - name: ESLINTING
         run: |
