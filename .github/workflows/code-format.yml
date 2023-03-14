@@ -18,7 +18,7 @@ jobs:
    
     needs: prettier
     runs-on: ubuntu-latest
-    if: github.base_ref == 'nextjs' || github.base_ref == 'nextjs-prod' ||  github.base_ref == 'release/*'
+    if: github.event_name == 'pull_request' && github.base_ref == 'nextjs' || github.base_ref == 'nextjs-prod' ||  startsWith(github.base_ref, 'release/')
     steps:
       - name: ESLINTING
         run: |
